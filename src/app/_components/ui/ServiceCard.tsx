@@ -7,8 +7,8 @@ const ServiceCard = ({icon, text, title, delay}:Service & {delay:number}) => {
       <div className='flex justify-center mb-[1rem] text-emerald-800 bg-emerald-200 p-[1rem] rounded-full w-fit mx-auto'>
       {icon}
       </div>
-      <span className='text-[2.4rem] text-emerald-800 font-bold mb-[.8rem] block'>{title}</span>
-      <p className='text-[1.6rem] leading-[1.3]'>{text}</p>
+      <span className='xl:text-[2rem] 2xl:text-[2.4rem] text-emerald-800 font-bold mb-[.8rem] block'>{title}</span>
+      <p className='xl:text-[1.4rem] 2xl:text-[1.6rem] leading-[1.3]'>{text}</p>
     </motion.div>
   )
 }
