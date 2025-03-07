@@ -11,6 +11,8 @@ import Agreement from "./Agreement";
 import Speciality from "./Speciality";
 import Creta from "./Creta";
 import News from "./News";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Main = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -67,6 +69,8 @@ const Main = () => {
       <Speciality setActiveSection={setActiveSection}/>
       <News/>
       <Creta/>
+      <Contact setActiveSection={setActiveSection}/>
+      <Footer/>
     </>
   );
 };
