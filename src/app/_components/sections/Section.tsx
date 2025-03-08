@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-
 const Section = ({ id, children, setActiveSection, className }: { id: string; children: React.ReactNode; setActiveSection: (id: string) => void, className?:string }) => {
     const ref = useRef<HTMLDivElement>(null);
 

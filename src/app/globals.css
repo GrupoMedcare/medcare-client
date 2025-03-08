@@ -2,18 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-.container-width{
-  @apply 2xl:max-w-[70%] mx-auto
+.container-width {
+  @apply xl:max-w-[80%] mx-auto;
 }
 
-html{
+html {
   font-size: 10px;
 }
 
-*{
+* {
   @apply leading-none;
 }
 
-nav ul a{
-  @apply relative after:block after:absolute after:w-[0%] after:h-[2px] after:bg-transparent data-[active=true]:after:w-[70%] data-[active=true]:after:bg-zinc-100 after:duration-200 after:content-[""] after:mt-[.4rem] after:rounded-full; 
+nav ul a {
+  @apply relative after:block after:absolute after:w-[0%] after:h-[2px] after:bg-transparent data-[active=true]:after:w-[70%] data-[active=true]:after:bg-zinc-100 after:duration-200 after:content-[""] after:mt-[.4rem] after:rounded-full;
+}
+
+#creta {
+  background: url("/banner-creta.jpg");
+  @apply min-h-[60vh] bg-cover bg-no-repeat;
+}
+
+#contato form :where(input, textarea) {
+  @apply w-full p-[1rem] border outline-none border-zinc-300 text-[1.4rem] rounded-[.8rem] shadow-sm duration-200 ;
+}
+
+#contato form :where(input, textarea):where(:focus, :hover) {
+  /* @apply ; */
+  box-shadow: 0 0 0px 1px #065f46, 0 0 1px 3px #065f4681;
 }
