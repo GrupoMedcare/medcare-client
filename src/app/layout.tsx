@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { GlobalStore } from "@/store/global";
 
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${inter.className}`}>
         {children}
+        <GlobalStore/>
       </body>
     </html>
   );
