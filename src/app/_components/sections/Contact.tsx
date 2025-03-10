@@ -19,7 +19,6 @@ const contactSchema = z.object({
     .email({ message: "Insira um email válido" }),
   number: z
     .string()
-    .min(1, { message: "O número não pode ficar em branco" })
     .min(9, { message: "O número deve ter no mínimo 9 dígitos" })
     .max(11)
     .transform((v) => parseInt(v)),
@@ -71,9 +70,9 @@ const Contact = ({
       setActiveSection={setActiveSection}
       className="mt-[20rem]"
     >
-      <div className="container-width grid grid-cols-2">
+      <div className="container-width grid lg:grid-cols-2 max-lg:gap-[2rem]">
         <div>
-          <h1 className="text-[4rem] font-bold text-emerald-800 mb-[.8rem]">
+          <h1 className="text-[3rem] lg:text-[4rem] font-bold text-emerald-800 mb-[.8rem]">
             Entre em Contato Conosco
           </h1>
           <p className="text-[1.6rem] leading-[1.3]">
@@ -126,7 +125,7 @@ const Contact = ({
         </div>
         <form
           onSubmit={handleSubmit(sendMessage)}
-          className="border border-zinc-200 shadow-lg rounded-[1rem] p-[2rem] grid grid-cols-2 gap-[1rem]"
+          className="border border-zinc-200 shadow-lg rounded-[1rem] p-[2rem] grid lg:grid-cols-2 gap-[1rem]"
         >
           <div>
             <label
