@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container-width {
-  @apply xl:max-w-[80%] mx-auto;
+  @apply max-w-[90%] xl:max-w-[80%] mx-auto;
 }
 
 html {
@@ -20,7 +20,7 @@ nav ul a {
 
 #creta {
   background: url("/banner-creta.jpg");
-  @apply min-h-[60vh] bg-cover bg-no-repeat;
+  @apply min-h-[70dvh] bg-cover bg-no-repeat;
 }
 
 #contato form :where(input, textarea) {
