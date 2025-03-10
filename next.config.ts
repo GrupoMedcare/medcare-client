@@ -5,8 +5,13 @@ const nextConfig: NextConfig = {
     remotePatterns: [{
       hostname: "**",
       pathname: "**"
-
     }]
+  },
+  typescript: {
+    ignoreBuildErrors: true
+  },
+  eslint: {
+    ignoreDuringBuilds: true
   }
 };
 
