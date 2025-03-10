@@ -23,29 +23,29 @@ const Main = () => {
         setActiveSection={setActiveSection}
       />
       <Section
-        id="main"
+        id="inicio"
         setActiveSection={setActiveSection}
         className=" py-[10rem] bg-emerald-50 "
       >
-        <div className="grid grid-cols-2 container-width gap-[2rem]">
+        <div className="lg:grid grid-cols-2 container-width gap-[2rem]">
           <div>
-            <h1 className="text-emerald-800 xl:text-[4rem] 2xl:text-[5rem] font-extrabold leading-[1.15] mb-[.8rem]">
+            <h1 className="text-emerald-800 text-[3.4rem] xl:text-[4rem] 2xl:text-[5rem] font-extrabold leading-[1.15] mb-[.8rem]">
               Cuidamos da sua saúde com excelência e paixão
             </h1>
-            <p className="xl:text-[1.6rem] 2xl:text-[2rem] text-zinc-700 leading-[1.3]">
+            <p className="text-[1.4rem] xl:text-[1.6rem] 2xl:text-[2rem] text-zinc-700 leading-[1.3]">
               O Grupo MedCare oferece atendimento médico de qualidade com
               profissionais especializados e tecnologia avançada.
             </p>
-            <div className="flex gap-[1rem] mt-[2rem] xl:text-[1.4rem] 2xl:text-[1.6rem]">
+            <div className="flex items-center gap-[1rem] mt-[2rem] text-[1.6rem] xl:text-[1.4rem] 2xl:text-[1.6rem]">
               <Link
                 href={"/"}
-                className="p-[1.2rem] rounded-[1rem] border border-transparent bg-emerald-800 text-zinc-100"
+                className="p-[1.2rem] font-semibold rounded-[1rem] border border-transparent bg-emerald-800 text-zinc-100"
               >
                 Agendar consulta
               </Link>
               <Link
-                href={"/"}
-                className="p-[1.2rem] rounded-[1rem] border border-emerald-700 text-emerald-800"
+                href={"#servicos"}
+                className="p-[1.2rem] font-semibold rounded-[1rem] border border-emerald-700 text-emerald-800"
               >
                 Nossos serviços
               </Link>
@@ -53,12 +53,12 @@ const Main = () => {
           </div>
           <Image
             src={
-              "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=2791&auto=format&fit=crop"
+              "/banner-home-3.jpg"
             }
             alt="Equipe médica"
             height={800}
             width={800}
-            className="rounded-[2rem]"
+            className="rounded-[2rem] h-[35rem] object-cover max-lg:hidden"
           />
         </div>
       </Section>
