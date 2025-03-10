@@ -7,32 +7,32 @@ const services: Service[] = [
     {
         title: "Consultas Médicas",
         text: "Consultas com médicos especialistas em diversas áreas da saúde.",
-        icon: <ShieldPlus />
+        icon: <ShieldPlus  className='size-[3rem]'/>
     },
     {
         title: "Consultas Médicas",
         text: "Consultas com médicos especialistas em diversas áreas da saúde.",
-        icon: <ShieldPlus />
+        icon: <ShieldPlus  className='size-[3rem]'/>
     },
     {
         title: "Consultas Médicas",
         text: "Consultas com médicos especialistas em diversas áreas da saúde.",
-        icon: <ShieldPlus />
+        icon: <ShieldPlus  className='size-[3rem]'/>
     },
     {
         title: "Consultas Médicas",
         text: "Consultas com médicos especialistas em diversas áreas da saúde.",
-        icon: <ShieldPlus />
+        icon: <ShieldPlus  className='size-[3rem]'/>
     },
     {
         title: "Consultas Médicas",
         text: "Consultas com médicos especialistas em diversas áreas da saúde.",
-        icon: <ShieldPlus />
+        icon: <ShieldPlus  className='size-[3rem]'/>
     },
     {
         title: "Consultas Médicas",
         text: "Consultas com médicos especialistas em diversas áreas da saúde.",
-        icon: <ShieldPlus />
+        icon: <ShieldPlus  className='size-[3rem]'/>
     },
 ]
 const Services = ({setActiveSection}: {setActiveSection:(v:string)=> void}) => {
@@ -40,8 +40,8 @@ const Services = ({setActiveSection}: {setActiveSection:(v:string)=> void}) => {
         <Section id="servicos" setActiveSection={setActiveSection} className='mt-[10rem]'>
             <div className="container-width">
                 <span className='bg-emerald-200 text-emerald-800 block w-fit mx-auto text-[1.4rem] p-[1rem] font-semibold rounded-[1rem] mb-[1.2rem]'>Nossos Serviços</span>
-                <h1 className='text-[4rem] font-bold text-emerald-800 text-center'>Cuidados completos para sua saúde</h1>
-                <div className='grid grid-cols-3 gap-[1rem] mt-[2rem]'>
+                <h1 className='text-[3rem] lg:text-[4rem] font-bold text-emerald-800 text-center'>Cuidados completos para sua saúde</h1>
+                <div className='grid lg:grid-cols-3 gap-[1rem] mt-[2rem]'>
                     {services.map((s, i) => <ServiceCard {...s} key={i} delay={i} />)}
                 </div>
             </div>
