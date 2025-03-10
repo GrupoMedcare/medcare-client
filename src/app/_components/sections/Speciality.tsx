@@ -47,10 +47,10 @@ const Speciality = ({
         <span className="bg-emerald-200 text-emerald-800 block w-fit mx-auto text-[1.4rem] p-[1rem] font-semibold rounded-[1rem] mb-[1.2rem]">
           Especialidades
         </span>
-        <h1 className="text-[4rem] font-bold text-emerald-800 text-center">
+        <h1 className="text-[3rem] lg:text-[4rem] font-bold text-emerald-800 text-center">
           Possuimos a especialidade ideal para você
         </h1>
-        <div className="grid grid-cols-4 gap-[1rem] mt-[2rem]">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-[1rem] mt-[2rem]">
             {speciality.map((s,i)=> <div key={i} className="flex gap-[1rem] items-center border border-zinc-300 rounded-[.6rem] p-[.8rem]">
                 <div className="bg-emerald-800 p-[.5rem] rounded-full text-zinc-100 w-fit">
                 {s.icon}
