@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-const Section = ({ id, children, setActiveSection, className }: { id: string; children: React.ReactNode; setActiveSection: (id: string) => void, className?:string }) => {
+import { HTMLAttributes, useEffect, useRef } from "react";
+const Section = ({ id, children, setActiveSection, className, ...props }: { id: string; children: React.ReactNode; setActiveSection: (id: string) => void, className?:string } & HTMLAttributes<HTMLElement>) => {
     const ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -9,7 +9,7 @@ const Section = ({ id, children, setActiveSection, className }: { id: string; ch
                     setActiveSection(id);
                 }
             },
-            { threshold: .3 } // Define quando a seção está visível (50% visível)
+            { threshold: .3 }
         );
 
         if (ref.current) {
@@ -24,7 +24,7 @@ const Section = ({ id, children, setActiveSection, className }: { id: string; ch
     }, [id, setActiveSection]);
 
     return (
-        <section ref={ref} id={id} className={className}>
+        <section ref={ref} id={id} className={className} {...props}>
             {children}
         </section>
     );
